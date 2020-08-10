@@ -30,11 +30,11 @@ scrape_configs:
     - targets: ['localhost:9090']
 
 # remote storage details. 
-    
-remote_read:
-    - url: 
-      bearer_token: 
 
 remote_write:
-    - url: 
-      bearer_token: 
+- url: https://prometheus-us-central1.grafana.net/api/prom/push
+  basic_auth:
+    username: 
+    password: 
+
+
